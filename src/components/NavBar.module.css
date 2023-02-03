@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    background-color: rgb(5, 5, 73);
+    justify-content: space-between;
+    text-align: center;
+}
+nav h1 {
+    margin: 0 0 0 0.5rem;
+    color: white;
+}
+ul {
+    height:45px;
+    margin:0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul li{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    color: rgb(219, 234, 5);
+    cursor: pointer;
+    transform: scale(1.5);
+    text-decoration: underline;
+}
