@@ -1,3 +1,7 @@
+:root{
+    --hover-color-yellow:rgb(219, 234, 5); 
+}
+
 nav {
     display: flex;
     background-color: rgb(5, 5, 73);
@@ -12,6 +16,12 @@ nav h1 {
 nav svg{
     display: none;
     color: white;
+}
+nav svg:hover{
+    color: var(--hover-color-yellow);
+    border: 1px solid white;
+    border-radius: 25%;
+    cursor: pointer;
 }
 ul {
 
@@ -31,13 +41,16 @@ ul li{
 }
 
 ul li:hover {
-    color: rgb(219, 234, 5);
+    color:var(--hover-color-yellow);
     cursor: pointer;
     transform: scale(1.5);
     text-decoration: underline;
 }
 
 @media screen and (max-width: 800px){
+    nav {
+        justify-content: center;
+    }
     nav ul {
         display: none;
     }
@@ -45,5 +58,8 @@ ul li:hover {
     nav svg {
         display: unset;
     
+    }
+    nav h1{
+        margin:  auto;
     }
 }
