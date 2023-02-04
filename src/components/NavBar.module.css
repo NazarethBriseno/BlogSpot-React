@@ -1,10 +1,11 @@
 :root{
     --hover-color-yellow:rgb(219, 234, 5); 
+    --blue-background-color: rgb(5, 5, 73);
 }
 
 nav {
     display: flex;
-    background-color: rgb(5, 5, 73);
+    background-color: var(--blue-background-color);
     justify-content: space-between;
     align-items: center;
     height: 45px;
@@ -47,11 +48,14 @@ ul li:hover {
     text-decoration: underline;
 }
 
+
+
 @media screen and (max-width: 800px){
     nav {
         justify-content: center;
     }
     nav ul {
+        padding: 0 40px 0 0;
         display: none;
     }
  
@@ -60,6 +64,18 @@ ul li:hover {
     
     }
     nav h1{
-        margin:  auto;
+        margin:  auto ;
+    }
+    .navOpen{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    top:45px;
+    background-color: var(--blue-background-color);
+}
+    ul li {
+        height: 25px;
+        user-select: none;
     }
 }
