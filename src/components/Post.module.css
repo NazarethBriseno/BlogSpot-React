@@ -1,0 +1,44 @@
+.PostContainer{
+    width: 35%;
+    background-color: #050549;
+    color:white;
+    border: 1px solid white;
+}
+.UserProfilePic{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.UserInfoHeader{
+    display: flex;
+    gap: 3%;
+}
+
+.UserPostText{
+    text-align: center;
+    margin: 4px 0 12px 0;
+    padding: 0 5px 0 5px;
+}
+
+@media screen and (max-width:1300px){
+    .PostContainer{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1155px){
+    .PostContainer{
+        width: 45%;
+    }
+}
+@media screen and (max-width:1000px){
+    .PostContainer{
+        width: 60%;
+    }
+}
+@media screen and (max-width:800px){
+    .PostContainer{
+        width: 90%;
+    }
+}
