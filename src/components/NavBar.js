@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "./NavBar.module.css"
+import styles from "./NavBar.module.css";
+import { Link } from "react-router-dom";
 export default function NavBar(){
     const [navBarCollapsed, openNavBar] = useState(false);
     function toggleNavBar(){
@@ -24,8 +25,8 @@ export default function NavBar(){
                 BlogSpot
             </h1>
             <ul className={navBarCollapsed ? styles.navOpen : null}>
-                <li>Home</li>
-                <li>My Profile</li>
+                <li><Link to="/myFeed">Home</Link></li>
+                <li><Link to="/myProfile">My Profile</Link></li>
                 <li>Trending</li>
             </ul>
             <svg onClick={toggleNavBar} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">

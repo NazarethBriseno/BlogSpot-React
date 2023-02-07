@@ -3,6 +3,7 @@
     --blue-background-color: rgb(5, 5, 73);
 }
 
+
 nav {
     display: flex;
     background-color: var(--blue-background-color);
